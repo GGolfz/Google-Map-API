@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh06CwgR4Fl6FQcCY20oIVexPI1102yGg"
+    ></script>
+    <script>
+        window.onload = mapInit;
+    </script>
+    <style>
+        #map {
+            height: 600px;
+            width: 600px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="map">
+      </div>
+      <input type="text" id="lat" placeholder="latitude">
+      <input type="text" id="long" placeholder="longitude">
+      <input type="submit" value="gen" onclick="mapInit()">
+      <input type="text" id="cus_lat" placeholder="Your Latitude">
+      <input type="text" id="cus_long" placeholder="Your Longitude">
+  </body>
+</html>
